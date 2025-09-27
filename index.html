@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Trabajo Astronomía</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      background: black;
+      overflow-x: hidden;
+    }
+
+    /* Fondo estrellado animado */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: url('https://www.transparenttextures.com/patterns/stardust.png');
+      animation: stars 100s linear infinite;
+      z-index: -1;
+    }
+
+    @keyframes stars {
+      from {background-position: 0 0;}
+      to {background-position: -10000px 5000px;}
+    }
+
+    header {
+      text-align: center;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.7);
+      border-bottom: 2px solid #66fcf1;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #66fcf1;
+      text-shadow: 0 0 15px #45a29e;
+    }
+
+    main {
+      padding: 30px;
+      text-align: center;
+    }
+
+    section {
+      margin: 50px auto;
+      max-width: 800px;
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(102,252,241,0.7);
+    }
+
+    h2 {
+      color: #45a29e;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 15px;
+      box-shadow: 0 0 15px rgba(255,255,255,0.5);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 14px;
+      background: rgba(0,0,0,0.8);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌌 Trabajo de Astronomía 🌌</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Introducción</h2>
+      <p>La astronomía es la ciencia que estudia los cuerpos celestes, su movimiento, origen y evolución. 
+      Gracias a ella conocemos mejor nuestro universo.</p>
+      <img src="https://apod.nasa.gov/apod/image/1901/IC405_Abolfath_3952.jpg" alt="Nebulosa espacial">
+    </section>
+
+    <section>
+      <h2>El Sistema Solar</h2>
+      <p>Está compuesto por el Sol, los planetas, sus satélites, asteroides, cometas y otros objetos. 
+      Nuestro planeta, la Tierra, es solo un pequeño punto en la vastedad del cosmos.</p>
+      <img src="https://apod.nasa.gov/apod/image/2001/PIA23645_fig1.jpg" alt="Sistema Solar">
+    </section>
+
+    <section>
+      <h2>Conclusión</h2>
+      <p>El estudio del espacio nos recuerda lo pequeños que somos y lo mucho que aún nos queda por descubrir.</p>
+      <img src="https://apod.nasa.gov/apod/image/2407/MilkyWaySpica_Salazar_2560.jpg" alt="Vía Láctea">
+    </section>
+  </main>
+
+  <footer>
+    <p>Hecho por [Tu Nombre] ✨ - Publicado con GitHub Pages</p>
+  </footer>
+</body>
+</html>
